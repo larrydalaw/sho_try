@@ -1,0 +1,439 @@
+{
+    "id": "8789473a-666a-4590-b85d-c4a191da5ba2",
+    "name": "sho_try",
+    "description": "Postman's collection for sho_try",
+    "order": [
+        "daca8493-655b-9393-b70c-17c12d4ab855"
+    ],
+    "folders": [
+    
+        {
+            "id": "9998bd19-4a9e-42c1-b015-40a9369c45b5",
+            "name": "Diagnostic",
+            "description": "Diagnostic operations.",
+            "order": [
+                
+                "e683ad01-6eb1-4c70-a0e0-cd88d024ccc6",                
+                "bf1c7b2e-eb59-4b7b-b8ed-219655370f02"                
+            ],
+            "owner": 0
+        },    
+        {
+            "id": "7a37e30c-f89d-46a6-ab36-39dc9ddf5f6d",
+            "name": "User",
+            "description": "Collection for resource User",
+            "order": [
+                
+                "f0d91498-4e9b-424f-bb13-c5b160a571ac",                
+                "347f860b-eee7-4304-859c-5e38512f3ffe",                
+                "e4ced0b3-4993-427e-ac6e-6c8217f8fa39",                
+                "52feb098-3872-4fdb-b73f-3aebf0023edb"                
+            ],
+            "owner": 0
+        },    
+        {
+            "id": "a2686b8d-2931-4448-8eea-a6c9fa24a542",
+            "name": "Place",
+            "description": "Collection for resource Place",
+            "order": [
+                
+                "d690b4bd-229b-462e-bfe7-9871bd9d2cd2",                
+                "1d638031-cc67-4a12-8db9-26bf666f1e02",                
+                "7d4b7097-7014-4741-afc2-b239b088f992",                
+                "96a67b39-ea6e-4f5b-a5b1-3f93d4af27f8"                
+            ],
+            "owner": 0
+        },    
+        {
+            "id": "92ca178d-04e6-479d-abd9-840b036a1933",
+            "name": "Neww",
+            "description": "Collection for resource Neww",
+            "order": [
+                
+                "f7dab017-60ac-4007-a56c-fa3ce9dac7ab",                
+                "d3d15663-9fc0-4bd8-9e2a-a5ff295f02f9",                
+                "6d496f01-8657-405c-9e5b-fc0c1d4f98ac",                
+                "6dbb1f41-9f13-455c-9a78-3dfa7ed0ec30"                
+            ],
+            "owner": 0
+        }    
+    ],
+    "timestamp": 1490723788341,
+    "owner": 0,
+    "remoteLink": "",
+    "public": false,
+    "requests": [
+                
+    {
+            "id": "a2f56d4a-c1d4-4882-b49c-abc8458514df",
+            "headers": "Authorization: Basic aWNpbmV0aWM6YWRtaW4=\n",
+            "url": "http://{{host}}:{{port}}/api/swagger.json",
+            "preRequestScript": "",
+            "pathVariables": {},
+            "method": "GET",
+            "data": [],
+            "dataMode": "params",
+            "version": 2,
+            "tests": "",
+            "currentHelper": "basicAuth",
+            "helperAttributes": {
+				"username": "{{user}}",
+				"password": "{{pass}}",
+				"saveToRequest": true
+			},
+            "time": 1490723788341,
+            "name": "API Doc: Swagger 2.0",
+            "description": "Swagger 2.0 API Documentation",
+            "descriptionFormat": "",
+            "collectionId": "8789473a-666a-4590-b85d-c4a191da5ba2",
+            "responses": [],
+            "rawModeData": ""
+        },                
+    {
+            "id": "e683ad01-6eb1-4c70-a0e0-cd88d024ccc6",
+            "headers": "",
+            "url": "http://{{host}}:{{port}}/ping",
+            "preRequestScript": "",
+            "pathVariables": {},
+            "method": "GET",
+            "data": [],
+            "dataMode": "params",
+            "version": 2,
+            "tests": "",
+            "currentHelper": "normal",
+            "helperAttributes": {},
+            "time": 1490723788341,
+            "name": "Ping Service",
+            "description": "The Ping service allows to check if the service is up and running.\nIn production systems it can be used by Load Balancers to check if the current node is working.\nNo auth credentials are needed to call this service.\nA successfull response for a ping call is: `200 OK { \"msg\": \"pong\" }`",
+            "descriptionFormat": "html",
+            "collectionId": "8789473a-666a-4590-b85d-c4a191da5ba2",
+            "responses": [],
+            "rawModeData": ""
+        },                
+    {
+            "id": "bf1c7b2e-eb59-4b7b-b8ed-219655370f02",
+            "headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Basic aWNpbmV0aWM6YWRtaW4=\n",
+            "url": "http://{{host}}:{{port}}/api/status",
+            "preRequestScript": "",
+            "pathVariables": {},
+            "method": "GET",
+            "data": [],
+            "dataMode": "params",
+            "version": 2,
+            "tests": "",
+            "currentHelper": "basicAuth",
+            "helperAttributes": {
+				"username": "{{user}}",
+				"password": "{{pass}}",
+				"saveToRequest": true
+			},
+            "time": 1490723788341,
+            "name": "Status Service",
+            "description": "The Status service provides information and versions of the running backend. This method requires authentication.",
+            "descriptionFormat": "html",
+            "collectionId": "8789473a-666a-4590-b85d-c4a191da5ba2",
+            "responses": [],
+            "rawModeData": ""
+        },                
+    {
+            "id": "f0d91498-4e9b-424f-bb13-c5b160a571ac",
+            "headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Basic aWNpbmV0aWM6YWRtaW4=\n",
+            "url": "http://{{host}}:{{port}}/api/users?limit=10",
+            "preRequestScript": "",
+            "pathVariables": {},
+            "method": "GET",
+            "data": [],
+            "dataMode": "params",
+            "version": 2,
+            "tests": "",
+            "currentHelper": "basicAuth",
+            "helperAttributes": {
+				"username": "{{user}}",
+				"password": "{{pass}}",
+				"saveToRequest": true
+			},
+            "time": 1490723788356,
+            "name": "Query User",
+            "description": "Query User. Query syntax follows the BaucisJS conventions, see: https://github.com/wprl/baucis/wiki/Query-String-Parameters",
+            "descriptionFormat": "html",
+            "collectionId": "8789473a-666a-4590-b85d-c4a191da5ba2",
+            "responses": [],
+            "rawModeData": ""
+        },                
+    {
+            "id": "347f860b-eee7-4304-859c-5e38512f3ffe",
+            "headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Basic aWNpbmV0aWM6YWRtaW4=\n",
+            "url": "http://{{host}}:{{port}}/api/users",
+            "preRequestScript": "",
+            "pathVariables": {},
+            "method": "POST",
+            "data": [],
+            "dataMode": "raw",
+            "version": 2,
+            "tests": "",
+            "currentHelper": "basicAuth",
+            "helperAttributes": {
+				"username": "{{user}}",
+				"password": "{{pass}}",
+				"saveToRequest": true
+			},
+            "time": 1490723788356,
+            "name": "Create User",
+            "description": "Creates a new User.",
+            "descriptionFormat": "html",
+            "collectionId": "8789473a-666a-4590-b85d-c4a191da5ba2",
+            "responses": [],
+            "rawModeData": "{\n    \"name\" : \"new_Name\",\n    \"lastname\" : \"new_Lastname\",\n    \"age\" : 3,\n    \"isActive\" : true\n}"
+        },                
+    {
+            "id": "e4ced0b3-4993-427e-ac6e-6c8217f8fa39",
+            "headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Basic aWNpbmV0aWM6YWRtaW4=\n",
+            "url": "http://{{host}}:{{port}}/api/users/{{id}}",
+            "preRequestScript": "",
+            "pathVariables": {},
+            "method": "PUT",
+            "data": [],
+            "dataMode": "raw",
+            "version": 2,
+            "tests": "",
+            "currentHelper": "basicAuth",
+            "helperAttributes": {
+				"username": "{{user}}",
+				"password": "{{pass}}",
+				"saveToRequest": true
+			},
+            "time": 1490723788372,
+            "name": "Update User",
+            "description": "Updates the User with id: `{{id}}`.",
+            "descriptionFormat": "html",
+            "collectionId": "8789473a-666a-4590-b85d-c4a191da5ba2",
+            "responses": [],
+            "rawModeData": "{\n    \"name\" : \"updated_Name\",\n    \"lastname\" : \"updated_Lastname\",\n    \"age\" : 3,\n    \"isActive\" : true\n}"
+        },                
+    {
+            "id": "52feb098-3872-4fdb-b73f-3aebf0023edb",
+            "headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Basic aWNpbmV0aWM6YWRtaW4=\n",
+            "url": "http://{{host}}:{{port}}/api/users/{{id}}",
+            "preRequestScript": "",
+            "pathVariables": {},
+            "method": "DELETE",
+            "data": [],
+            "dataMode": "raw",
+            "version": 2,
+            "tests": "",
+            "currentHelper": "basicAuth",
+            "helperAttributes": {
+				"username": "{{user}}",
+				"password": "{{pass}}",
+				"saveToRequest": true
+			},
+            "time": 1490723788372,
+            "name": "Delete User",
+            "description": "Deletes the User with id: `{{id}}`.",
+            "descriptionFormat": "html",
+            "collectionId": "8789473a-666a-4590-b85d-c4a191da5ba2",
+            "responses": [],
+            "rawModeData": ""
+        },                
+    {
+            "id": "d690b4bd-229b-462e-bfe7-9871bd9d2cd2",
+            "headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Basic aWNpbmV0aWM6YWRtaW4=\n",
+            "url": "http://{{host}}:{{port}}/api/places?limit=10",
+            "preRequestScript": "",
+            "pathVariables": {},
+            "method": "GET",
+            "data": [],
+            "dataMode": "params",
+            "version": 2,
+            "tests": "",
+            "currentHelper": "basicAuth",
+            "helperAttributes": {
+				"username": "{{user}}",
+				"password": "{{pass}}",
+				"saveToRequest": true
+			},
+            "time": 1490723788372,
+            "name": "Query Place",
+            "description": "Query Place. Query syntax follows the BaucisJS conventions, see: https://github.com/wprl/baucis/wiki/Query-String-Parameters",
+            "descriptionFormat": "html",
+            "collectionId": "8789473a-666a-4590-b85d-c4a191da5ba2",
+            "responses": [],
+            "rawModeData": ""
+        },                
+    {
+            "id": "1d638031-cc67-4a12-8db9-26bf666f1e02",
+            "headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Basic aWNpbmV0aWM6YWRtaW4=\n",
+            "url": "http://{{host}}:{{port}}/api/places",
+            "preRequestScript": "",
+            "pathVariables": {},
+            "method": "POST",
+            "data": [],
+            "dataMode": "raw",
+            "version": 2,
+            "tests": "",
+            "currentHelper": "basicAuth",
+            "helperAttributes": {
+				"username": "{{user}}",
+				"password": "{{pass}}",
+				"saveToRequest": true
+			},
+            "time": 1490723788372,
+            "name": "Create Place",
+            "description": "Creates a new Place.",
+            "descriptionFormat": "html",
+            "collectionId": "8789473a-666a-4590-b85d-c4a191da5ba2",
+            "responses": [],
+            "rawModeData": "{\n    \"name\" : \"new_Name\",\n    \"description\" : \"new_Description\",\n    \"location\" : { \"type\" : \"Point\", \"coordinates\" : [139.71, 35.65] },\n    \"picture\" : null\n}"
+        },                
+    {
+            "id": "7d4b7097-7014-4741-afc2-b239b088f992",
+            "headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Basic aWNpbmV0aWM6YWRtaW4=\n",
+            "url": "http://{{host}}:{{port}}/api/places/{{id}}",
+            "preRequestScript": "",
+            "pathVariables": {},
+            "method": "PUT",
+            "data": [],
+            "dataMode": "raw",
+            "version": 2,
+            "tests": "",
+            "currentHelper": "basicAuth",
+            "helperAttributes": {
+				"username": "{{user}}",
+				"password": "{{pass}}",
+				"saveToRequest": true
+			},
+            "time": 1490723788372,
+            "name": "Update Place",
+            "description": "Updates the Place with id: `{{id}}`.",
+            "descriptionFormat": "html",
+            "collectionId": "8789473a-666a-4590-b85d-c4a191da5ba2",
+            "responses": [],
+            "rawModeData": "{\n    \"name\" : \"updated_Name\",\n    \"description\" : \"updated_Description\",\n    \"location\" : { \"type\" : \"Point\", \"coordinates\" : [139.71, 35.65] },\n    \"picture\" : null\n}"
+        },                
+    {
+            "id": "96a67b39-ea6e-4f5b-a5b1-3f93d4af27f8",
+            "headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Basic aWNpbmV0aWM6YWRtaW4=\n",
+            "url": "http://{{host}}:{{port}}/api/places/{{id}}",
+            "preRequestScript": "",
+            "pathVariables": {},
+            "method": "DELETE",
+            "data": [],
+            "dataMode": "raw",
+            "version": 2,
+            "tests": "",
+            "currentHelper": "basicAuth",
+            "helperAttributes": {
+				"username": "{{user}}",
+				"password": "{{pass}}",
+				"saveToRequest": true
+			},
+            "time": 1490723788372,
+            "name": "Delete Place",
+            "description": "Deletes the Place with id: `{{id}}`.",
+            "descriptionFormat": "html",
+            "collectionId": "8789473a-666a-4590-b85d-c4a191da5ba2",
+            "responses": [],
+            "rawModeData": ""
+        },                
+    {
+            "id": "f7dab017-60ac-4007-a56c-fa3ce9dac7ab",
+            "headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Basic aWNpbmV0aWM6YWRtaW4=\n",
+            "url": "http://{{host}}:{{port}}/api/newws?limit=10",
+            "preRequestScript": "",
+            "pathVariables": {},
+            "method": "GET",
+            "data": [],
+            "dataMode": "params",
+            "version": 2,
+            "tests": "",
+            "currentHelper": "basicAuth",
+            "helperAttributes": {
+				"username": "{{user}}",
+				"password": "{{pass}}",
+				"saveToRequest": true
+			},
+            "time": 1490723788372,
+            "name": "Query Neww",
+            "description": "Query Neww. Query syntax follows the BaucisJS conventions, see: https://github.com/wprl/baucis/wiki/Query-String-Parameters",
+            "descriptionFormat": "html",
+            "collectionId": "8789473a-666a-4590-b85d-c4a191da5ba2",
+            "responses": [],
+            "rawModeData": ""
+        },                
+    {
+            "id": "d3d15663-9fc0-4bd8-9e2a-a5ff295f02f9",
+            "headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Basic aWNpbmV0aWM6YWRtaW4=\n",
+            "url": "http://{{host}}:{{port}}/api/newws",
+            "preRequestScript": "",
+            "pathVariables": {},
+            "method": "POST",
+            "data": [],
+            "dataMode": "raw",
+            "version": 2,
+            "tests": "",
+            "currentHelper": "basicAuth",
+            "helperAttributes": {
+				"username": "{{user}}",
+				"password": "{{pass}}",
+				"saveToRequest": true
+			},
+            "time": 1490723788372,
+            "name": "Create Neww",
+            "description": "Creates a new Neww.",
+            "descriptionFormat": "html",
+            "collectionId": "8789473a-666a-4590-b85d-c4a191da5ba2",
+            "responses": [],
+            "rawModeData": "{\n    \"newAttribute\" : true\n}"
+        },                
+    {
+            "id": "6d496f01-8657-405c-9e5b-fc0c1d4f98ac",
+            "headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Basic aWNpbmV0aWM6YWRtaW4=\n",
+            "url": "http://{{host}}:{{port}}/api/newws/{{id}}",
+            "preRequestScript": "",
+            "pathVariables": {},
+            "method": "PUT",
+            "data": [],
+            "dataMode": "raw",
+            "version": 2,
+            "tests": "",
+            "currentHelper": "basicAuth",
+            "helperAttributes": {
+				"username": "{{user}}",
+				"password": "{{pass}}",
+				"saveToRequest": true
+			},
+            "time": 1490723788372,
+            "name": "Update Neww",
+            "description": "Updates the Neww with id: `{{id}}`.",
+            "descriptionFormat": "html",
+            "collectionId": "8789473a-666a-4590-b85d-c4a191da5ba2",
+            "responses": [],
+            "rawModeData": "{\n    \"newAttribute\" : true\n}"
+        },                
+    {
+            "id": "6dbb1f41-9f13-455c-9a78-3dfa7ed0ec30",
+            "headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Basic aWNpbmV0aWM6YWRtaW4=\n",
+            "url": "http://{{host}}:{{port}}/api/newws/{{id}}",
+            "preRequestScript": "",
+            "pathVariables": {},
+            "method": "DELETE",
+            "data": [],
+            "dataMode": "raw",
+            "version": 2,
+            "tests": "",
+            "currentHelper": "basicAuth",
+            "helperAttributes": {
+				"username": "{{user}}",
+				"password": "{{pass}}",
+				"saveToRequest": true
+			},
+            "time": 1490723788372,
+            "name": "Delete Neww",
+            "description": "Deletes the Neww with id: `{{id}}`.",
+            "descriptionFormat": "html",
+            "collectionId": "8789473a-666a-4590-b85d-c4a191da5ba2",
+            "responses": [],
+            "rawModeData": ""
+        }                 
+    ]    
+}

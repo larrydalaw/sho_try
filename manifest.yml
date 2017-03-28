@@ -1,0 +1,4 @@
+---
+applications:
+- name: sho_try
+  command: node app/server.js
